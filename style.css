@@ -2,6 +2,15 @@ body {
     background: #c7b39b url(images/background1.jpg);
     
   }
+  .container {
+    z-index: 1
+}
+.box-name {
+    font-family: "Neucha", cursive;
+    background-color: #db7093;
+    margin-right: 0rem;
+  
+}
   * {
     box-sizing: border-box;
     padding: 0;
@@ -12,30 +21,27 @@ body {
     font-family: "arial", "times new roman";
     font-size: 18px;
   }
-  a:hover {
-    color: #db7093;
-  }
   
-  h1 {
+  /* h1 {
     display: inline-block;
     font-size: 35px;
-  }
-  div {
+  } */
+  /* div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-  }
+  } */
   
   header div ul {
     list-style-type: none;
   }
   
-  ul li {
+  /* ul li {
     display: inline-block;
     margin-left: 25px;
-  }
-  header {
-    background-color: white;
+  } */
+  .Heading ml-3 {
+    background-color: #db7093;;
     opacity: 70%;
     font-family: "Kaushan Script", cursive;
     color: black;
@@ -44,50 +50,41 @@ body {
     margin: 0 auto;
   }
   
-  h2 {
-    font-family: "Neucha", cursive;
-    color: #db7093;
-    padding: 20px;
-    font-size: 30px;
-    margin: 15px;
-    border-bottom: 3px;
-  }
-  .aboutme {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background-color: white;
-    padding:0 auto;
-    float:left;
-    margin:15px;
-    width:60%;
-    padding-left:10px;
-  }
   .img {
     padding:0 auto;
-    margin-left:2%;
-    border: 3px double black; 
-    background: cornsilk; 
-    padding: 8px;
+    margin-left:1%; 
+    background: lightgray;
+    border-radius: 10px/10px;
   }
   
-  @media (min-width: 600px) {
+  /* phone using  */
+  @media screen and (min-width: 400px) {
     body {
       font-size: 12px;
     }
+  
   }
-  @media (min-width: 800px) {
+  /* ipad using */
+  @media screen and (min-width: 768px) {
     body {
       font-size: 16px
     }
+    .mobile {
+      display:none;
+    }
+    .tablet {
+      display:block;
+    }
   }
-  form {
-    background: #c7b39b url(images/background.jpg);
-    padding: 20px;
-    margin:10px;
-    width: 350px;
-    height:250px;
-    color:white;
-    height:450px;
-    float:left;
+    /* desktop using */
+  @media (min-width: 992px) {
+    body {
+      font-size: 20px;
+    }
+    .tablet {display:none;
+    }
+    .desktop {display:block;
+    }
   }
   input {
     margin-top: 10px;
@@ -110,9 +107,32 @@ footer {padding:2px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-size: 10px;
-    background-color: cornsilk;
+    background-color: lightgray;
+    bottom: 0;
+    width: 100%;
 }
 p {
     font-size:16px;
+    color:white;
+}
+h1{color:black;
+  font-size:14px;
+}
+h2{color:black;
+  font-size:18px;
+}
+.col {
+  padding:20px;
+}
+
+justify-content-end {
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}.navbar-brand {
+  margin-right: 0em;
+}
+.navbar-light .navbar-brand {
+  color:  white;
+  font-family: "Kaushan Script", cursive;
+  font-size:30px;
 }
